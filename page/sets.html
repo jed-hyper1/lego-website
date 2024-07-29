@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lego Sets</title>
+    <link rel="stylesheet" href="/css/set.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Lego sets</h1>
+            <div>
+                <button class="button"><a href="">Add to cart</a></button>
+                <button class="button" style="background-color: transparent; border: 1px solid white;"><a href="">View details</a></button>
+            </div>
+        </header>
+        
+        <div class="nav-container">
+            <nav class="top-nav">
+                <div class="category-nav">
+                    <a href="#star-wars">Star Wars Lego</a>
+                    <a href="#harry-potter">Harry Potter Lego</a>
+                    <a href="#city">City Lego</a>
+                    <a href="#marvel">Marvel Lego</a>
+                    <a href="#disney">Disney Lego</a>
+                    <a href="#technic">Technic Lego</a>
+                </div>
+                <div class="filter-options">
+                    <button class="filter-button">Filter options</button>
+                    <button class="view-toggle">⋮</button>
+                </div>
+            </nav>
+            <div style="padding: 10px 0;">
+                <a href="#" class="back-button">
+                    <span class="back-arrow">&#8249;</span> Previ
+                </a>
+            </div>
+        </div>
+        
+        <div class="banner">
+            Explore Lego creations!
+        </div>
+        
+        <div class="breadcrumb">
+            Building sets / Toys / Lego / Lego sets
+        </div>
+        
+        <div>
+            <h2 style="font-size: 20px;">Popular Lego <span style="background-color: #ff6b35; padding: 2px 8px; border-radius: 10px;border-radius: 30px; font-size: 15px;">1234</span></h2>
+        </div>
+        
+        <div class="filters">
+            <div>
+                <button class="filter-button">Theme ▼</button>
+                <button class="filter-button">Piece count ▼</button>
+                <button class="filter-button">Age range ▼</button>
+                <button class="filter-button">Price range ▼</button>
+            </div>
+            <div class="toggle-container">
+               
+                <span class="label-text">Limited stock</span>
+                <label class="switch">
+                    <input type="checkbox" id="limited-stock">
+                    <span class="slider"></span>
+                </label>
+                
+                <span class="label-text">Certified</span>
+                <label class="switch">
+                    <input type="checkbox" id="certified">
+                    <span class="slider"></span>
+                </label>
+            </div>
+        </div>
+        
+        <div class="product-grid">
+            <div class="product-card">
+                <img src="/api/placeholder/200/150" alt="Millennium Falcon Set">
+                <div class="product-info">
+                    <h3>Millennium Falcon Set</h3>
+                    <p>567 ★</p>
+                    <p>$150</p>
+                </div>
+            </div>
+            <!-- Repeat product-card div for other products -->
+        </div>
+    </div>
+    <script src="scripts.js"></script>
+</body>
+</html>

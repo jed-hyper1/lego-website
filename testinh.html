@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Music Player Interface</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+            background-color: #e8e8e8;
+            color: white;
+            font-size: 16px;
+        }
+        .music-player {
+            background-color: #3f2a7e;
+            display: grid;
+            grid-template-columns: 200px 1fr 300px;
+            gap: 1rem;
+            height: 100vh;
+            padding: 1rem;
+        }
+        .sidebar, .main-content, .right-sidebar {
+            display: flex;
+            flex-direction: column;
+            overflow-y: auto;
+        }
+        .sidebar {
+            padding-right: 1rem;
+        }
+        .sidebar h2 {
+            margin-bottom: 1rem;
+        }
+        .sidebar ul {
+            list-style-type: none;
+        }
+        .sidebar li {
+            margin-bottom: 0.75rem;
+            opacity: 0.7;
+            cursor: pointer;
+        }
+        .sidebar li:hover {
+            opacity: 1;
+        }
+        .main-content {
+            gap: 1rem;
+        }
+        .trending {
+            background-image: linear-gradient(to right, #3f2a7e, #2c1e58);
+            border-radius: 15px;
+            padding: 1.5rem;
+        }
+        .trending h1 {
+            font-size: 2em;
+            margin: 0.5rem 0;
+        }
+        .trending button {
+            padding: 0.5rem 1rem;
+            border-radius: 20px;
+            border: none;
+            margin-right: 0.5rem;
+            cursor: pointer;
+            font-size: 0.9em;
+        }
+        .trending button:first-child {
+            background-color: #ff4b4b;
+            color: white;
+        }
+        .trending button:last-child {
+            background-color: transparent;
+            border: 1px solid white;
+            color: white;
+        }
+        .playlist {
+            background-color: #2c1e58;
+            border-radius: 15px;
+            padding: 1rem;
+        }
+        .playlist table {
+            width: 100%;
+            border-collapse: collapse;
+            font-size: 0.9em;
+        }
+        .playlist th, .playlist td {
+            text-align: left;
+            padding: 0.5rem;
+            border-bottom: 1px solid #3f2a7e;
+        }
+        .right-sidebar {
+            gap: 1rem;
+        }
+        .tags, .played, .player-controls {
+            background-color: #2c1e58;
+            border-radius: 15px;
+            padding: 1rem;
+        }
+        .tag {
+            display: inline-block;
+            background-color: #3f2a7e;
+            border-radius: 20px;
+            padding: 0.25rem 0.75rem;
+            margin-right: 0.5rem;
+            margin-bottom: 0.5rem;
+            font-size: 0.8em;
+        }
+        .played img {
+            width: 40px;
+            height: 40px;
+            border-radius: 5px;
+            margin-right: 0.5rem;
+        }
+        .progress-bar {
+            background-color: #3f2a7e;
+            height: 5px;
+            border-radius: 5px;
+            margin: 0.5rem 0;
+        }
+        .progress {
+            background-color: white;
+            width: 30%;
+            height: 100%;
+            border-radius: 5px;
+        }
+        
+        @media (max-width: 1200px) {
+            .music-player {
+                grid-template-columns: 150px 1fr 250px;
+            }
+        }
+        
+        @media (max-width: 992px) {
+            .music-player {
+                grid-template-columns: 120px 1fr 200px;
+            }
+            body {
+                font-size: 14px;
+            }
+        }
+        
+        @media (max-width: 768px) {
+            .music-player {
+                grid-template-columns: 1fr;
+                height: auto;
+            }
+            .sidebar, .right-sidebar {
+                display: none;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="music-player">
+        <div class="sidebar">
+            <h2>Music</h2>
+            <ul>
+                <li>Home</li>
+                <li>Discover</li>
+                <li>Browse</li>
+                <li>Podcasts</li>
+                <li>Radio</li>
+            </ul>
+            <h3>Library</h3>
+            <ul>
+                <li>Albums</li>
+                <li>Song</li>
+                <li>Artists</li>
+            </ul>
+        </div>
+        <div class="main-content">
+            <div class="trending">
+                <p>What's hot</p>
+                <h1>Top all over the world</h1>
+                <p>Monthly listeners: 98,029</p>
+                <button>Play</button>
+                <button>Follow</button>
+            </div>
+            <div class="playlist">
+                <h2>Playlist</h2>
+                <table>
+                    <tr>
+                        <th>#</th>
+                        <th>TITLE</th>
+                        <th>ARTIST</th>
+                        <th>TIME</th>
+                        <th>ALBUM</th>
+                    </tr>
+                    <tr>
+                        <td>01</td>
+                        <td>Sleep 4Ever</td>
+                        <td>Blackbear</td>
+                        <td>4:12</td>
+                        <td>HoneyWorks</td>
+                    </tr>
+                    <tr>
+                        <td>02</td>
+                        <td>Time is Ticking Out</td>
+                        <td>The Cranberries</td>
+                        <td>4:20</td>
+                        <td>Wake up And Smell T...</td>
+                    </tr>
+                    <tr>
+                        <td>03</td>
+                        <td>If i were u</td>
+                        <td>Lauv</td>
+                        <td>3:12</td>
+                        <td>The Ecstatic</td>
+                    </tr>
+                    <tr>
+                        <td>04</td>
+                        <td>One Minute More</td>
+                        <td>Gun Kelly</td>
+                        <td>2:56</td>
+                        <td>Supercell</td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+        <div class="right-sidebar">
+            <div class="tags">
+                <h3>Tags</h3>
+                <span class="tag">Acoustic</span>
+                <span class="tag">Piano jazz</span>
+                <span class="tag">Jazz</span>
+                <span class="tag">Indie pop</span>
+            </div>
+            <div class="played">
+                <h3>Played</h3>
+                <div>
+                    <img src="/api/placeholder/40/40" alt="Album cover">
+                    <span>Blank Space</span>
+                    <p>Taylor Swift</p>
+                </div>
+            </div>
+            <div class="player-controls">
+                <div class="progress-bar">
+                    <div class="progress"></div>
+                </div>
+                <p>1:16 / 4:20</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

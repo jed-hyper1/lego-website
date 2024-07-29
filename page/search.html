@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>search</title>
+    <link rel="stylesheet" href="/css/search.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="header">
+        <div id="first">
+          <a href="/page/homepage.html">LegoLand</a>
+          <div class="search-container">
+            <span class="search-icon">🔍</span>
+            <input
+              type="text"
+              class="search-input"
+              placeholder="Search Lego sets"
+            />
+          </div>
+        </div>
+
+        <div id="last">
+          <a href="">Explore</a>
+          <a href="">Popular</a>
+          <a href="">Lego</a>
+          <button><a href="" ">Add to Cart</a></button>
+        </div>
+      </div>
+
+      <div id="box">
+        <div class="lego-filter-system">
+          <div class="exit"><img src="/arrow-left-s-line.png" alt=""></div>
+          <div class="filter-container">
+            <div class="filter-header">
+              <input type="text" placeholder="    Filter by Theme" />
+              <span class="arrow">▼</span>
+            </div>
+            <div class="filter-content">
+              <div class="filter-section">
+                <h3>Availability</h3>
+                <div class="checkbox-group">
+                  <label><input type="checkbox" checked /> Add to Cart</label>
+                  <label><input type="checkbox" checked /> Ending soon</label>
+                  <label><input type="checkbox" checked /> New arrivals</label>
+                </div>
+              </div>
+              <div class="filter-section">
+                <h3>Theme</h3>
+                <div class="checkbox-group">
+                  <label><input type="checkbox" checked /> Add to Cart</label>
+                  <label><input type="checkbox" checked /> Ending soon</label>
+                  <label><input type="checkbox" checked /> New arrivals</label>
+                </div>
+              </div>
+              <div class="filter-section">
+                <h3>Lego Creator Set</h3>
+                <div class="checkbox-group">
+                  <label><input type="checkbox" /> New arrivals</label>
+                </div>
+              </div>
+              <div class="filter-section">
+                <h3>Price range</h3>
+                <input type="range" min="0" max="100" value="50" />
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="content">
+          <div class="card">
+            <div class="title">
+              <h2>Build</h2>
+              <small>@Legomarker</small>
+            </div>
+            <div
+              class="card-image"
+              style="
+                background-image: url('https://via.placeholder.com/300x200?text=Lego+Set');
+              "
+            ></div>
+            <div class="card-content">
+                <div style="display: flex; flex-direction: column; padding-right: 90px;">
+                    <small>Starting price</small>
+                    <p >10.0</p>
+                </div>
+                
+                <div style="display: flex; flex-direction: column; ">
+                    <small>Time left</small>
+                    <p>10.0</p>
+                </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+  <script src="/script/search.js"></script>
+</html>

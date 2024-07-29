@@ -1,0 +1,221 @@
+
+:root {
+  --bg-color: #161616;
+  --color-button:#C5791E;
+  --colorFrong:#FFFFFF;
+  --colorInput:#303030;
+}
+
+body{
+  background-color: var(--bg-color);
+}
+.header {
+    margin: 40px 50px 0px 50px;
+    display: flex;
+    flex-wrap: wrap;
+    border: 2px solid black;
+    padding: 20px 0px;
+    justify-content: space-around;
+    background-color: var(--colorInput);
+  
+    #first {
+      display: flex;
+  
+      a {
+        font-size: 25px;
+        margin-left: -120px;
+        color: var(--colorFrong);
+        text-decoration: none;
+      }
+  
+      .search-container {
+        position: relative;
+        width: 300px;
+      }
+      .search-input {
+        width: 100%;
+        padding: 10px 15px 10px 40px;
+        border: none;
+        border-radius: 20px;
+        background-color: #444;
+        color: #fff;
+        font-size: 16px;
+      }
+      .search-input::placeholder {
+        color: #aaa;
+      }
+      .search-icon {
+        position: absolute;
+        left: 15px;
+        top: 38%;
+        transform: translateY(-50%);
+        color: #aaa;
+      }
+    }
+  
+    div {
+      margin: 0px 30px;
+    }
+    button {
+      border-radius: 50px;
+      height: 50px;
+      width: 150px;
+    }
+  
+    #last {
+      margin-right: -130px;
+      a {
+        padding: 0px 10px;
+        color: var(--colorFrong);
+        text-decoration: none;
+      }
+      button{
+        a{
+          color: var(--bg-color);
+        }
+      }
+    }
+  }
+  
+  #box{
+    display: flex;
+   
+  }
+
+  .lego-filter-system {
+    color: var(--colorFrong);
+    width: 300px;
+    margin: 30px 50px;
+
+    .filter-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 10px;
+      background-color: var(--bg-color);
+      cursor: pointer;
+  
+      input[type="text"] {
+        flex-grow: 1;
+        margin-right: 10px;
+        padding: 5px;
+        background-color: var(--colorInput);
+        border-radius: 20px;
+      }
+  
+      .arrow {
+        transition: transform 0.3s;
+      }
+  
+      &.active .arrow {
+        transform: rotate(180deg);
+      }
+    }
+  
+    .filter-content {
+      max-height: 0;
+      overflow: hidden;
+      transition: max-height 0.3s ease-out;
+  
+      &.active {
+        max-height: 1000px;
+      }
+    }
+  
+    .filter-section {
+      padding: 10px;
+      border-top: 1px solid #eee;
+      width: 200px;
+      margin-left: 25px;
+      margin-top: 10px;
+      h3 {
+        margin-top: 0;
+        font-size: 16px;
+      }
+    }
+  
+    .checkbox-group {
+      display: flex;
+      flex-direction: column;
+  
+      label {
+        margin-bottom: 5px;
+        display: flex;
+        align-items: center;
+      }
+  
+      input[type="checkbox"] {
+        margin-right: 5px;
+      }
+    }
+  
+    input[type="range"] {
+      width: 100%;
+    }
+  }
+
+  .content{
+
+    margin: 50px;
+  
+    .card {
+        width:250px;
+        background-color: #333;
+        border-radius: 10px;
+        overflow: hidden;
+        margin: 10px;
+        padding: 10px;
+        color: var(--colorFrong);
+        .title {
+            display: flex;
+            align-items: center; /* Aligns items vertically centered */
+        }
+
+        .title h2 {
+            margin: 0; /* Remove default margin */
+            padding:10px 70px 10px 20px;
+        }
+
+        .title small {
+            margin: 0; /* Remove default margin */
+        }
+    }
+    .card-image {
+        height: 200px;
+        background-size: cover;
+        background-position: center;
+        border: 2px solid none;
+        border-radius: 10px;
+    }
+    .card-content {
+   
+        color: white;
+        display: flex;
+        small{
+            margin: 10px 14px 0px 5px;
+            font-size: 12px;
+            font-weight: 300;
+            text-transform: none;
+            text-align: left;
+            letter-spacing: 0px;
+            line-height: 14px;
+            white-space: pre-line;
+            word-break: break-word;
+        }
+
+
+        p{
+            margin: 5px 0px 0px 10px;
+            font-size: 12px;
+            font-weight: 300;
+            text-transform: none;
+            text-align: left;
+            letter-spacing: 0px;
+            line-height: 14px;
+            white-space: pre-line;
+            word-break: break-word;
+        }
+    }
+
+ 
+  }

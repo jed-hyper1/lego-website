@@ -1,0 +1,79 @@
+// Wait for the DOM to be fully loaded
+document.addEventListener("DOMContentLoaded", () => {
+  // Selecting elements
+  const title = document.getElementById("title");
+  const description = document.querySelector(".description");
+  const changeTextBtn = document.getElementById("change-text-btn");
+  const addItemBtn = document.getElementById("add-item-btn");
+  const itemList = document.getElementById("item-list");
+
+  // Modifying content
+  title.textContent = "Welcome to the DOM Manipulation Template";
+  description.innerHTML = "This is a modified <strong>paragraph</strong>.";
+
+  // Modifying attributes
+  title.setAttribute("data-custom", "customValue");
+
+  // Adding a class
+  description.classList.add("highlight");
+
+  // Event handling
+  changeTextBtn.addEventListener("click", () => {
+    title.textContent = "Text Changed!";
+  });
+
+  addItemBtn.addEventListener("click", () => {
+    // Creating a new element
+    const newItem = document.createElement("li");
+    newItem.textContent = `Item ${itemList.children.length + 1}`;
+
+    // Appending the new element
+    itemList.appendChild(newItem);
+  });
+
+  // Removing a class
+  setTimeout(() => {
+    description.classList.remove("highlight");
+  }, 3000);
+
+  // Traversing the DOM
+  const firstItem = itemList.firstElementChild;
+  console.log("First item:", firstItem.textContent);
+
+  const lastItem = itemList.lastElementChild;
+  console.log("Last item:", lastItem.textContent);
+
+  // Working with forms (if present)
+  // Example for adding form elements dynamically
+  const form = document.createElement("form");
+  form.setAttribute("id", "dynamic-form");
+
+  const input = document.createElement("input");
+  input.setAttribute("type", "text");
+  input.setAttribute("placeholder", "Enter text");
+
+  const submitBtn = document.createElement("button");
+  submitBtn.setAttribute("type", "submit");
+  submitBtn.textContent = "Submit";
+
+  form.appendChild(input);
+  form.appendChild(submitBtn);
+  document.body.appendChild(form);
+
+  // Handling form submission
+  form.addEventListener("submit", (event) => {
+    event.preventDefault();
+    alert(`Form submitted with: ${input.value}`);
+  });
+
+  // Removing elements
+  const removeItemBtn = document.createElement("button");
+  removeItemBtn.textContent = "Remove Last Item";
+  document.body.appendChild(removeItemBtn);
+
+  removeItemBtn.addEventListener("click", () => {
+    if (itemList.lastElementChild) {
+      itemList.removeChild(itemList.lastElementChild);
+    }
+  });
+});

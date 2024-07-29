@@ -1,0 +1,507 @@
+{
+    "count": 463,
+    "next": "https://rebrickable.com/api/v3/lego/themes/?page=2",
+    "previous": null,
+    "results": [
+        {
+            "id": 1,
+            "parent_id": null,
+            "name": "Technic"
+        },
+        {
+            "id": 3,
+            "parent_id": 1,
+            "name": "Competition"
+        },
+        {
+            "id": 4,
+            "parent_id": 1,
+            "name": "Expert Builder"
+        },
+        {
+            "id": 16,
+            "parent_id": 1,
+            "name": "RoboRiders"
+        },
+        {
+            "id": 17,
+            "parent_id": 1,
+            "name": "Speed Slammers"
+        },
+        {
+            "id": 18,
+            "parent_id": 1,
+            "name": "Star Wars"
+        },
+        {
+            "id": 19,
+            "parent_id": 1,
+            "name": "Supplemental"
+        },
+        {
+            "id": 20,
+            "parent_id": 1,
+            "name": "Throwbot Slizer"
+        },
+        {
+            "id": 21,
+            "parent_id": 1,
+            "name": "Universal Building Set"
+        },
+        {
+            "id": 22,
+            "parent_id": null,
+            "name": "Creator"
+        },
+        {
+            "id": 34,
+            "parent_id": null,
+            "name": "Make & Create"
+        },
+        {
+            "id": 35,
+            "parent_id": 34,
+            "name": "Bricks & More"
+        },
+        {
+            "id": 50,
+            "parent_id": null,
+            "name": "Town"
+        },
+        {
+            "id": 51,
+            "parent_id": 50,
+            "name": "Arctic"
+        },
+        {
+            "id": 52,
+            "parent_id": null,
+            "name": "City"
+        },
+        {
+            "id": 53,
+            "parent_id": 52,
+            "name": "Airport"
+        },
+        {
+            "id": 54,
+            "parent_id": 52,
+            "name": "Cargo"
+        },
+        {
+            "id": 55,
+            "parent_id": 52,
+            "name": "Coast Guard"
+        },
+        {
+            "id": 56,
+            "parent_id": 52,
+            "name": "Construction"
+        },
+        {
+            "id": 57,
+            "parent_id": 52,
+            "name": "Farm"
+        },
+        {
+            "id": 58,
+            "parent_id": 52,
+            "name": "Fire"
+        },
+        {
+            "id": 59,
+            "parent_id": 52,
+            "name": "Harbor"
+        },
+        {
+            "id": 60,
+            "parent_id": 52,
+            "name": "Hospital"
+        },
+        {
+            "id": 61,
+            "parent_id": 52,
+            "name": "Police"
+        },
+        {
+            "id": 63,
+            "parent_id": 52,
+            "name": "Traffic"
+        },
+        {
+            "id": 64,
+            "parent_id": 52,
+            "name": "Off-Road"
+        },
+        {
+            "id": 65,
+            "parent_id": 52,
+            "name": "Arctic"
+        },
+        {
+            "id": 66,
+            "parent_id": 52,
+            "name": "Trains"
+        },
+        {
+            "id": 67,
+            "parent_id": 50,
+            "name": "Classic Town"
+        },
+        {
+            "id": 86,
+            "parent_id": 50,
+            "name": "Divers"
+        },
+        {
+            "id": 87,
+            "parent_id": 50,
+            "name": "Extreme Team"
+        },
+        {
+            "id": 88,
+            "parent_id": 50,
+            "name": "Launch Command"
+        },
+        {
+            "id": 89,
+            "parent_id": 50,
+            "name": "Outback"
+        },
+        {
+            "id": 90,
+            "parent_id": 50,
+            "name": "Paradisa"
+        },
+        {
+            "id": 91,
+            "parent_id": 50,
+            "name": "Race"
+        },
+        {
+            "id": 92,
+            "parent_id": 50,
+            "name": "Res-Q"
+        },
+        {
+            "id": 93,
+            "parent_id": 50,
+            "name": "Space Port"
+        },
+        {
+            "id": 94,
+            "parent_id": 50,
+            "name": "Town Jr."
+        },
+        {
+            "id": 104,
+            "parent_id": 50,
+            "name": "Town Plan"
+        },
+        {
+            "id": 105,
+            "parent_id": 50,
+            "name": "World City"
+        },
+        {
+            "id": 106,
+            "parent_id": 50,
+            "name": "City Center"
+        },
+        {
+            "id": 112,
+            "parent_id": null,
+            "name": "Racers"
+        },
+        {
+            "id": 114,
+            "parent_id": 112,
+            "name": "Ferrari"
+        },
+        {
+            "id": 118,
+            "parent_id": 112,
+            "name": "Promotional"
+        },
+        {
+            "id": 122,
+            "parent_id": 112,
+            "name": "RC"
+        },
+        {
+            "id": 123,
+            "parent_id": 112,
+            "name": "World Racers"
+        },
+        {
+            "id": 126,
+            "parent_id": null,
+            "name": "Space"
+        },
+        {
+            "id": 127,
+            "parent_id": 126,
+            "name": "Alien Conquest"
+        },
+        {
+            "id": 128,
+            "parent_id": 126,
+            "name": "Blacktron I"
+        },
+        {
+            "id": 129,
+            "parent_id": 126,
+            "name": "Blacktron II"
+        },
+        {
+            "id": 130,
+            "parent_id": 126,
+            "name": "Classic Space"
+        },
+        {
+            "id": 131,
+            "parent_id": 126,
+            "name": "Exploriens"
+        },
+        {
+            "id": 132,
+            "parent_id": 126,
+            "name": "Futuron"
+        },
+        {
+            "id": 133,
+            "parent_id": 126,
+            "name": "Ice Planet 2002"
+        },
+        {
+            "id": 134,
+            "parent_id": 126,
+            "name": "Insectoids"
+        },
+        {
+            "id": 135,
+            "parent_id": 126,
+            "name": "Life On Mars"
+        },
+        {
+            "id": 136,
+            "parent_id": 126,
+            "name": "M:Tron"
+        },
+        {
+            "id": 137,
+            "parent_id": 126,
+            "name": "Mars Mission"
+        },
+        {
+            "id": 138,
+            "parent_id": 126,
+            "name": "RoboForce"
+        },
+        {
+            "id": 139,
+            "parent_id": 126,
+            "name": "Space Police I"
+        },
+        {
+            "id": 140,
+            "parent_id": 126,
+            "name": "Space Police II"
+        },
+        {
+            "id": 141,
+            "parent_id": 126,
+            "name": "Space Police III"
+        },
+        {
+            "id": 142,
+            "parent_id": 126,
+            "name": "Spyrius"
+        },
+        {
+            "id": 143,
+            "parent_id": 126,
+            "name": "Supplemental"
+        },
+        {
+            "id": 144,
+            "parent_id": 126,
+            "name": "UFO"
+        },
+        {
+            "id": 145,
+            "parent_id": 126,
+            "name": "Unitron"
+        },
+        {
+            "id": 146,
+            "parent_id": 126,
+            "name": "Galaxy Squad"
+        },
+        {
+            "id": 147,
+            "parent_id": null,
+            "name": "Pirates"
+        },
+        {
+            "id": 148,
+            "parent_id": 147,
+            "name": "Pirates I"
+        },
+        {
+            "id": 153,
+            "parent_id": 147,
+            "name": "Pirates II"
+        },
+        {
+            "id": 154,
+            "parent_id": 147,
+            "name": "Pirates III"
+        },
+        {
+            "id": 155,
+            "parent_id": null,
+            "name": "Modular Buildings"
+        },
+        {
+            "id": 156,
+            "parent_id": 155,
+            "name": "Mini"
+        },
+        {
+            "id": 157,
+            "parent_id": 598,
+            "name": "Bricktober"
+        },
+        {
+            "id": 158,
+            "parent_id": null,
+            "name": "Star Wars"
+        },
+        {
+            "id": 171,
+            "parent_id": 158,
+            "name": "Ultimate Collector Series"
+        },
+        {
+            "id": 186,
+            "parent_id": null,
+            "name": "Castle"
+        },
+        {
+            "id": 187,
+            "parent_id": 186,
+            "name": "Black Falcons"
+        },
+        {
+            "id": 188,
+            "parent_id": 186,
+            "name": "Black Knights"
+        },
+        {
+            "id": 189,
+            "parent_id": 186,
+            "name": "Classic Castle"
+        },
+        {
+            "id": 190,
+            "parent_id": 186,
+            "name": "Dragon Knights"
+        },
+        {
+            "id": 191,
+            "parent_id": 186,
+            "name": "Dark Forest"
+        },
+        {
+            "id": 193,
+            "parent_id": 186,
+            "name": "Fantasy Era"
+        },
+        {
+            "id": 194,
+            "parent_id": 186,
+            "name": "Forestmen"
+        },
+        {
+            "id": 195,
+            "parent_id": 186,
+            "name": "Fright Knights"
+        },
+        {
+            "id": 196,
+            "parent_id": 186,
+            "name": "Kingdoms"
+        },
+        {
+            "id": 197,
+            "parent_id": 186,
+            "name": "Knights Kingdom I"
+        },
+        {
+            "id": 198,
+            "parent_id": 186,
+            "name": "Knights Kingdom II"
+        },
+        {
+            "id": 199,
+            "parent_id": 186,
+            "name": "Lion Knights"
+        },
+        {
+            "id": 201,
+            "parent_id": 186,
+            "name": "Royal Knights"
+        },
+        {
+            "id": 203,
+            "parent_id": 186,
+            "name": "Wolfpack"
+        },
+        {
+            "id": 204,
+            "parent_id": 22,
+            "name": "Designer Sets"
+        },
+        {
+            "id": 206,
+            "parent_id": null,
+            "name": "Seasonal"
+        },
+        {
+            "id": 207,
+            "parent_id": 206,
+            "name": "Advent"
+        },
+        {
+            "id": 208,
+            "parent_id": 207,
+            "name": "City"
+        },
+        {
+            "id": 209,
+            "parent_id": 207,
+            "name": "Star Wars"
+        },
+        {
+            "id": 210,
+            "parent_id": 207,
+            "name": "Belville"
+        },
+        {
+            "id": 211,
+            "parent_id": 207,
+            "name": "Castle"
+        },
+        {
+            "id": 212,
+            "parent_id": 207,
+            "name": "Classic Basic"
+        },
+        {
+            "id": 213,
+            "parent_id": 207,
+            "name": "Clikits"
+        }
+    ]
+}
